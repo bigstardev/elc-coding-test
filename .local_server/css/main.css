@@ -1,0 +1,64 @@
+/** This is the main stylesheet for the sass compiler, all imports should stem from this initial page. It contains the universal styles of the site, the imports and various other items. */
+/** The menu is technically the header of the site, it contains the styles for the drop down of the Search Bar. */
+header.menu { width: 100%; position: relative; z-index: 10; }
+
+header.menu div.menu-container { width: 100%; background-color: #040a2b; padding: 0 20px; text-align: left; }
+
+header.menu div.menu-container div.menu-holder { position: relative; width: 100%; max-width: 1280px; margin: 0 auto; }
+
+header.menu div.menu-container h1 { font-family: Arial, Helvetica, sans-serif; font-size: 24px; line-height: 70px; color: white; text-align: left; display: inline-block; }
+
+header.menu div.menu-container nav { display: inline-block; margin-left: 60px; }
+
+header.menu div.menu-container nav i { color: white; font-size: 30px; line-height: 70px; }
+
+header.menu div.menu-container nav i.search { position: absolute; right: 10px; top: 0; }
+
+header.menu div.menu-container nav a.nav-item { font-family: Helvetica, Arial, Sans-Serif; font-size: 17px; line-height: 70px; text-transform: uppercase; text-decoration: none; white-space: nowrap; border-bottom: 1px solid transparent; color: #fff; margin-right: 20px; }
+
+header.menu div.search-container { position: absolute; background-color: white; z-index: 20; -webkit-box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); box-shadow: 0 0 10px rgba(0, 0, 0, 0.1); width: 100%; padding: 5px; background-color: white; border-bottom: 1px solid #ccc; display: none; }
+
+header.menu div.search-container.showing { display: block; }
+
+header.menu div.search-container input[type="text"] { min-width: 100%; font-size: 36px; line-height: 50px; border: 1px solid #ccc; padding: 0 10px; }
+
+header.menu div.search-container i.close { position: absolute; right: 10px; top: 5px; font-size: 36px; line-height: 50px; }
+
+.search-result { font-family: Helvetica, Arial, Sans-Serif; padding: 32px; display: grid; grid-template-columns: repeat(4, 1fr); -webkit-column-gap: 40px; -moz-column-gap: 40px; column-gap: 40px; row-gap: 24px; -webkit-box-align: end; -ms-flex-align: end; align-items: end; }
+
+.no-result { padding: 16px; font-family: Helvetica, Arial, Sans-Serif; text-align: center; }
+
+@media (max-width: 1200px) { .search-result { grid-template-columns: repeat(3, 1fr); } }
+
+@media (max-width: 600px) { .search-result { grid-template-columns: repeat(1, 1fr); } }
+
+/** This is the central home page */
+section#home { position: absolute; width: 100%; height: 100%; top: 0; left: 0; padding: 100px 20px 0; background-image: url("/img/header.jpg"); background-size: cover; background-repeat: no-repeat; }
+
+section#home div.content { max-width: 1280px; margin: 0 auto; color: #FFF; }
+
+.product { display: -webkit-box; display: -ms-flexbox; display: flex; -webkit-box-orient: vertical; -webkit-box-direction: normal; -ms-flex-direction: column; flex-direction: column; -webkit-box-align: center; -ms-flex-align: center; align-items: center; cursor: pointer; }
+
+.product img { display: block; max-width: 100%; max-height: 100%; width: auto; height: auto; }
+
+.product-name { font-size: 24px; padding: 8px 0px; text-align: center; font-weight: 600; }
+
+.product-about { margin-top: 8px; font-size: 16px; display: -webkit-box; -webkit-box-orient: vertical; -webkit-line-clamp: 2; overflow: hidden; color: #585756; }
+
+html, html * { -webkit-box-sizing: border-box; box-sizing: border-box; padding: 0; margin: 0; }
+
+html, body { width: 100%; height: 100%; }
+
+main { width: 100%; height: 100%; display: block; position: relative; }
+
+main * { -webkit-font-smoothing: antialiased; }
+
+main a { -webkit-transition: opacity 0.5s; transition: opacity 0.5s; }
+
+main a:hover { opacity: 0.7; }
+
+main a:visited { color: inherit; }
+
+main div.inner { width: 100%; height: auto; background-color: #960000; }
+
+/*# sourceMappingURL=main.css.map */
